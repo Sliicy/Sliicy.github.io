@@ -1,0 +1,116 @@
+<!DOCTYPE HTML5>
+<html><head><title>Sliicy - Meaningless Encryption</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Watch demo of Sliicy encryption."/>
+<meta name="keywords" content="sliicy, encryption, honeypot, honeypot encryption, algorithm, madlibs, meaningless encryption, quantum computers, sliicy encryption, decentralized, open source"/>
+<meta name="author" content="Sliicy"/>
+<meta name="theme-color" content="#000000"/>
+<meta property="og:title" content="Sliicy - Meaningless Encryption"/>
+<meta property="og:image" content="/images/banner.png"/>
+<meta property="og:description" content="Watch demo of Sliicy encryption."/>
+<meta property="og:url" content="http://sliicy.com"/>
+<meta property="og:type" content="product"/>
+<meta property="og:site_name" content="Sliicy"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" href="assets/css/main.css"/>
+<style>
+img{
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight:900;
+}
+body {
+background: -webkit-linear-gradient(#000000, #8C00FF); /* Chrome 10+, Safari 5.1+ */
+background: -o-linear-gradient(#000000, #8C00FF); /* Opera 11.1+ */
+background: -moz-linear-gradient(#000000, #8C00FF); /* Firefox 3.6+ */
+background: linear-gradient(#000000, #8C00FF); /* Standard syntax (must be last) */
+}
+.topnav {
+overflow: hidden;
+background-color: #8C00FF;
+position: fixed;
+width: 100%;
+height: 10%;
+z-index: 500;
+display: flex;
+justify-content: space-around;
+vertical-align: middle;
+}
+.topnav a {
+color: #FFF;
+align-items: center;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+font-size: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+list-style-type: none;
+width: 100%;
+}
+.topnav a:hover {
+background-color: #000;
+color: white;
+}
+.topnav a.active {
+background-color: #330033;
+color: white;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a><img height="50px" width="50px" src="images/banner.png"/></a>
+  <a href="index.html">Home</a>
+  <a href="https://github.com/Sliicy/Sliicy/raw/master/Sliicy%20Documentation.pdf">Documentation</a>
+  <a class="active" href="demo.html">Demo</a>
+  <a href="index.html#performance">Performance</a>
+  <a href="index.html#download">Download</a>
+</div>
+<div style="height: 5%"></div>
+<section id="home" class="wrapper style1 align-center"><div class="inner"><h1 style="color:white">Sliicy Demo</h1></br></br><h3 style="color:white">Enter a message to encrypt:</h3>
+<input style="background-color:white" id="input" value="" type="text">
+</br>
+<a class="button special" onclick="encryptFunction()">Encrypt</a></br></br>
+<h1 id="output" style="color:white; border: white 5px solid;">Output</h1>
+</br><h3 style="color:white">What's going on inside?</h3></br></br>
+<h3 style="color:white">Every word you type is a part of speech. Noun, adjective, verb, adverb, conjunction, etc...</br>Every word is replaced with another word that still fits the message. The amount of words skipped in this demo is random, but when you set up Sliicy, this number stays secret with your friends. In fact, there are over 500 numbers used to further make it harder to crack.</br></br>The amount of words, the amount of punctuation, the type of word, and the position of the word in the message each affect the outcome of each encryption.</h3>
+</div>
+</section>
+<script src="assets/js/encryptFull.js" language="javascript" async></script>
+<script language="javascript" async>
+var metaList = document.getElementsByTagName("meta");
+var isChromium = window.chrome, winNav = window.navigator, vendorName = winNav.vendor, isOpera = winNav.userAgent.indexOf("OPR") > -1, isIEedge = winNav.userAgent.indexOf("Edge") > -1, isIOSChrome = winNav.userAgent.match("CriOS");
+if(isIOSChrome){
+	var intervalID = window.setInterval(myCallback, 10000);
+	   // is Google Chrome on IOS
+} else if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
+	var intervalID = window.setInterval(myCallback, 10000);
+	  // is Google Chrome
+} else { 
+	   // not Google Chrome 
+}
+function getRandomColor() {
+	var letters = '0123456789ABCDEF';
+	var color = '#';
+	for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
+	return color;
+}
+function myCallback() {
+for (var i = 0; i < metaList.length; i++) {
+    if (metaList[i].getAttribute("name") == "theme-color") {
+        metaList[i].content = getRandomColor();
+    }
+}
+}
+</script>
+</body>
