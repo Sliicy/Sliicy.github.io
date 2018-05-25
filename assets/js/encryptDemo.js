@@ -5,5 +5,5 @@ var nouns = ["2D","3D","acceleration","acceptance","accordance","accumulation","
 var i1 = Math.floor(proper.length * Math.random());
 var i2 = Math.floor(verbs.length * Math.random());
 var i3 = Math.floor(nouns.length * Math.random());
-document.getElementById("demo").innerHTML = proper[i1] + " " + verbs[i2] + " " + nouns[i3] + ".";
+document.getElementById("quick-demo").innerHTML = proper[i1] + " " + verbs[i2] + " " + nouns[i3] + ".";
 }, 2500);
