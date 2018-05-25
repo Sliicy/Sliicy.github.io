@@ -70,7 +70,7 @@ color: white;
   <a><img height="50px" width="50px" src="images/banner.png"/></a>
   <a href="#home">Home</a>
   <a href="https://github.com/Sliicy/Sliicy/raw/master/Sliicy%20Documentation.pdf">Documentation</a>
-  <a href="demo.html">Demo</a>
+  <a href="#demo">Demo</a>
   <a href="#performance">Performance</a>
   <a href="#download">Download</a>
 </div>
@@ -115,7 +115,7 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <h1 style="color:white">Why Sliicy?</h1>
 <p style="color:white" align="justify" class="major">One word, <strong style="color:white">MEANING</strong>. Sliicy messes with the <strong style="color:white">meaning</strong> of the message, and words become parts of speech. No Artificial Intelligence or human being will <strong style="color:white">EVER</strong> be able to tell what you originally meant.</br></br>It is impossible to know if you meant wet or dry, white or black, Smith or Michael, in or out, etc.</p>
 <ul class="actions vertical">
-<li><a href="demo.html" class="button special" target="_blank">See it in action</a></li>
+<li><a href="#demo" class="button special" target="_blank">See it in action</a></li>
 </ul>
 </div>
 <div class="image">
@@ -248,7 +248,7 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 </h3>
 </div>
 <h2 style="color:white">Notice how the positions stay the same, yet the meaning becomes lost.</h2>
-<br/><br/><h1 style="color:white; background-color:black" id="demo">Sliicy encrypts messages.</h1><br/>
+<br/><br/><h1 style="color:white; background-color:black" id="quick-demo">Sliicy encrypts messages.</h1><br/>
 <section class="wrapper style1 align-center">
 <div class="inner medium">
 <ol style="color:white; text-align:justify; display:inline-block; margin-left:auto; margin-right:auto">
@@ -353,7 +353,7 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <section>
 <span class="icon style2 minor fa-hashtag"></span>
 <h3>Code</h3>
-<p>Open source and tested. New words are added frequently. Only trust Sliicy.com.</p>
+<p>Open source and tested. New words are added frequently. Only trust <a href="https://sliicy.com" target="_blank">Sliicy.com</a>.</p>
 </section>
 <section>
 <span class="icon style2 minor fa-envelope"></span>
@@ -408,6 +408,16 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 </div>
 </div>
 </section>
+<section id="demo" class="wrapper style1 align-center"><div class="inner"><h1 style="color:white">Sliicy Demo</h1></br></br><h3 style="color:white">Enter a message to encrypt:</h3>
+<input style="background-color:white" id="input" value="" type="text">
+</br>
+<a class="button special" onclick="encryptFunction()">Encrypt</a></br></br>
+<h1 id="output" style="color:white; border: white 5px solid;">Output</h1>
+</br><h3 style="color:white">How it works:</h3></br>
+<h3 style="color:white">Every word is a part of speech, such as nouns, adjectives, verbs, adverbs, conjunctions, etc...</br>Each word in the message is replaced with another word that is still grammatically accurate. The new chosen words are randomized in this demo, but remain consistent when setting up Sliicy. There are over 500 numbers which each affect the message in a different way.</br></br>The outcome of each encryption depends on the amount of words, the amount of punctuation, the type of word, and the position of the word in the message.</h3>
+</div>
+</section>
+<script src="assets/js/encryptFull.js" language="javascript" async></script>
 <section class="wrapper style1 align-center">
 <div class="inner medium" id="download">
 <h2 style="color:white">Download Sliicy</h2><br/><br/>
