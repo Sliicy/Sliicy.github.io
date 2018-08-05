@@ -1,0 +1,13 @@
+{
+  "name": "Sliicy Website",
+  "short_name": "Sliicy",
+  "description": "New encryption algorithm that encrypts messages in a meaningless way.",
+  "start_url": ".",
+  "background_color": "#000000",
+  "theme_color": "#8c00ff",
+  "icons": [{
+    "src": "/images/banner.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}
