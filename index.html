@@ -80,7 +80,7 @@ color: white;
   <a href="#performance">Performance</a>
   <a href="#download">Download</a>
 </div>
-<section id="home" class="wrapper style1 align-center"><div class="inner"><h1 style="color:white">Privacy is a God-given right</h1><h3 style="color:white"></br>A new approach to the concept of encryption</h3></div></section><div style="text-align:center; height: 5%"></div>
+<section id="home" class="wrapper style1 align-center"><div class="inner"><br/><br/><br/><br/><h1 style="color:white">Privacy is a God-given right</h1><h3 style="color:white"></br>A new approach to the concept of encryption</h3></div></section><div style="text-align:center; height: 5%"></div>
 <div id="wrapper" class="divided" width="100%">
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen">
 <div class="content">
@@ -164,9 +164,9 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <TABLE style="background-color:white; text-align:center">
 <TR>
 <TD style="color: blue">Jake</TD>
-<TD style="color: red">bought</TD>
+<TD style="color: darkred">bought</TD>
 <TD style="color: purple">a</TD>
-<TD style="color: orange">camera</TD>
+<TD style="color: #AC2121">camera</TD>
 <TD style="color: green">from</TD>
 <TD><span style="color: blue">Target</span>.</TD>
 </TR>
@@ -174,9 +174,9 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <TABLE style="background-color:white; text-align:center">
 <TR>
 <TD><span style="color: blue">(Proper Noun) </span></TD>
-<TD><span style="color: red">(Past Verb) </span></TD>
+<TD><span style="color: darkred">(Past Verb) </span></TD>
 <TD><span style="color: purple">(the) </span></TD>
-<TD><span style="color: orange">(Singular Noun) </span></TD>
+<TD><span style="color: #AC2121">(Singular Noun) </span></TD>
 <TD><span style="color: green">(Adverb) </span></TD>
 <TD><span style="color: blue">(Proper Noun)</span>.</TD>
 </TR>
@@ -199,57 +199,57 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <TABLE style="background-color:white; text-align:center">
 <TR>
 <TD><span style="color: blue">Jerry</span></TD>
-<TD><span style="color: red">ate</span></TD>
+<TD><span style="color: darkred">ate</span></TD>
 <TD><span style="color: purple">a</span></TD>
-<TD><span style="color: orange">chair</span></TD>
+<TD><span style="color: #AC2121">chair</span></TD>
 <TD><span style="color: green">with</span></TD>
 <TD><span style="color: blue">Drake</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Mike</span></TD>
-<TD><span style="color: red">took</span></TD>
+<TD><span style="color: darkred">took</span></TD>
 <TD><span style="color: purple">the</span></TD>
-<TD><span style="color: orange">key</span></TD>
+<TD><span style="color: #AC2121">key</span></TD>
 <TD><span style="color: green">by</span></TD>
 <TD><span style="color: blue">Stacy</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Zack</span></TD>
-<TD><span style="color: red">shot</span></TD>
+<TD><span style="color: darkred">shot</span></TD>
 <TD><span style="color: purple">a</span></TD>
-<TD><span style="color: orange">giraffe</span></TD>
+<TD><span style="color: #AC2121">giraffe</span></TD>
 <TD><span style="color: green">at</span></TD>
 <TD><span style="color: blue">Jesse</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Google</span></TD>
-<TD><span style="color: red">tried</span></TD>
+<TD><span style="color: darkred">tried</span></TD>
 <TD><span style="color: purple">the</span></TD>
-<TD><span style="color: orange">phone</span></TD>
+<TD><span style="color: #AC2121">phone</span></TD>
 <TD><span style="color: green">for</span></TD>
 <TD><span style="color: blue">Yahoo</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Kevin</span></TD>
-<TD><span style="color: red">hit</span></TD>
+<TD><span style="color: darkred">hit</span></TD>
 <TD><span style="color: purple">a</span></TD>
-<TD><span style="color: orange">hamper</span></TD>
+<TD><span style="color: #AC2121">hamper</span></TD>
 <TD><span style="color: green">in</span></TD>
 <TD><span style="color: blue">Frank</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Andy</span></TD>
-<TD><span style="color: red">wanted</span></TD>
+<TD><span style="color: darkred">wanted</span></TD>
 <TD><span style="color: purple">the</span></TD>
-<TD><span style="color: orange">grave</span></TD>
+<TD><span style="color: #AC2121">grave</span></TD>
 <TD><span style="color: green">under</span></TD>
 <TD><span style="color: blue">Jackson</span>.</TD>
 </TR>
 <TR>
 <TD><span style="color: blue">Mitt</span></TD>
-<TD><span style="color: red">allowed</span></TD>
+<TD><span style="color: darkred">allowed</span></TD>
 <TD><span style="color: purple">a</span></TD>
-<TD><span style="color: orange">catastrophe</span></TD>
+<TD><span style="color: #AC2121">catastrophe</span></TD>
 <TD><span style="color: green">with</span></TD>
 <TD><span style="color: blue">YouTube</span>.</TD>
 </TR>
@@ -489,6 +489,9 @@ function myCallback() {
       metaList[i].content = getRandomColor();
     }
   }
+}
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
 }
 </script>
 </body>
