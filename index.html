@@ -73,7 +73,7 @@ color: white;
 </head>
 <body>
 <div class="topnav">
-  <a><img class="lazy" data-src="images/lazy.jpg" data-srcset="images/lazy.jpg 1x" height="50px" width="50px" src="images/banner.png" alt="Sliicy Logo"/></a>
+  <a><img height="50px" width="50px" src="images/banner.png" alt="Sliicy Logo"/></a>
   <a href="#home">Home</a>
   <a href="https://github.com/Sliicy/Sliicy/raw/master/Sliicy%20Documentation.pdf">Documentation</a>
   <a href="#demo">Demo</a>
@@ -88,7 +88,7 @@ color: white;
 <p style="color:white" align="justify" class="major">It is estimated that by <strong style="color:white">2026</strong>, there's a <strong style="color:white">1/7</strong> chance that <a style="color:white" href="https://www.technologyreview.com/s/603424/quantum-computing-paranoia-creates-a-new-industry/" rel="noopener noreferrer" target="_blank">modern day encryption will be cracked.</a> Cryptographers and researchers alike are studying <a style="color:white" href="https://www.technologyreview.com/s/523746/honey-encryption-will-bamboozle-attackers-with-fake-secrets/" rel="noopener noreferrer" target="_blank">new attempts</a> to secure communication post Quantum era.</p>
 </div>
 <div class="image">
-<img class="lazy" data-src="images/lazy.jpg" data-srcset="images/lazy.jpg 1x" src="images/banner.png" alt="Sliicy Logo" />
+<img src="images/banner.png" alt="Sliicy Logo" />
 </div>
 </section>
 <section class="spotlight style1 orient-right content-align-left image-position-center" id="first">
@@ -97,7 +97,7 @@ color: white;
 <p style="color:white" align="justify" class="major">Google, IBM, and other governments are <a style="color:white" href="https://web.archive.org/web/20170728233004/https://www.nbcnews.com/mach/tech/quantum-computers-just-moved-step-closer-reality-ncna787481" rel="noopener noreferrer" target="_blank">racing to build Quantum Computers</a>. These computers will make WhatsApp, Signal, Gmail, and all communication <a style="color:white" href="https://www.howtogeek.com/166832/brute-force-attacks-explained-how-all-encryption-is-vulnerable/amp/" rel="noopener noreferrer" target="_blank"><strong style="color:white"> 100% insecure</strong></a>.</p>
 </div>
 <div class="image">
-<img class="lazy" data-src="images/lazy.jpg" data-srcset="images/lazy.jpg 1x" src="images/spotlight01.png" alt="Code Red" />
+<img src="images/spotlight01.png" alt="Code Red" />
 </div>
 </section>
 <section class="spotlight style1 orient-left content-align-left image-position-center">
@@ -112,7 +112,7 @@ color: white;
 How do you crack it?</br>Simple, try every possible password until you get a correct message. This <a style="color:white" href="https://threatpost.com/nist-calls-for-submissions-to-secure-data-against-quantum-computing/122700/" rel="noopener noreferrer" target="_blank">will only get easier</a> from Quantum Computers. Not even <a style="color:white" href="https://security.stackexchange.com/questions/87345/how-many-qubits-are-needed-to-factor-2048-bit-rsa-keys-on-a-quantum-computer" rel="noopener noreferrer" target="_blank">RSA</a> can survive.</p>
 </div>
 <div class="image">
-<img class="lazy" data-src="images/lazy.jpg" data-srcset="images/lazy.jpg 1x" src="images/spotlight02.png" alt="Programming Mistakes" />
+<img src="images/spotlight02.png" alt="Programming Mistakes" />
 </div>
 </section>
 <section class="spotlight style1 orient-right content-align-left image-position-center">
@@ -125,7 +125,7 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 </ul>
 </div>
 <div class="image">
-<img class="lazy" data-src="images/lazy.jpg" data-srcset="images/lazy.jpg 1x" src="images/spotlight03.png" style="width: 100%; height: auto" alt="Word Based Encryption" />
+<img src="images/spotlight03.png" style="width: 100%; height: auto" alt="Word Based Encryption" />
 </div>
 </section>
 <section class="wrapper style1 align-center">
@@ -490,28 +490,6 @@ function myCallback() {
     }
   }
 }
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target;
-          lazyImage.src = lazyImage.dataset.src;
-          lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.remove("lazy");
-          lazyImageObserver.unobserve(lazyImage);
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage);
-    });
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
 </script>
 </body>
 </html>
