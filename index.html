@@ -15,7 +15,7 @@
 <meta property="og:type" content="product"/>
 <meta property="og:site_name" content="Sliicy"/>
 <link rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" href="assets/css/main.css"/>
+<link rel="stylesheet" href="css/main.css"/>
 <link rel="amphtml" href="https://mercury.postlight.com/amp?url=https://sliicy.com/index.html"/>
 <link rel='shortlink' href='https://sliicy.com'/>
 <link rel="canonical" href='https://sliicy.com'/>
@@ -424,7 +424,7 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 <h3 style="color:white">Every word is a part of speech, such as nouns, adjectives, verbs, adverbs, conjunctions, etc...</br>Each word in the message is replaced with another word that is still grammatically accurate. The new chosen words are randomized in this demo, but remain consistent when setting up Sliicy. There are over 500 numbers which each affect the message in a different way.</br></br>The outcome of each encryption depends on the amount of words, the amount of punctuation, the type of word, and the position of the word in the message.</h3>
 </div>
 </section>
-<script src="assets/js/encryptFull.js" language="javascript" async></script>
+<script src="js/encryptFull.js" language="javascript" async></script>
 <section class="wrapper style1 align-center">
 <div class="inner medium" id="download">
 <h2 style="color:white">Download Sliicy</h2><br/><br/>
@@ -457,8 +457,8 @@ How do you crack it?</br>Simple, try every possible password until you get a cor
 </form>
 <a style="color:white; font-size:200%" href="https://github.com/Sliicy/Sliicy" rel="noopener noreferrer" target="_blank" class="icon style1 fa-github">Sliicy on GitHub</a><br/><br/><h4 id="copyright" style="color:white; font-size:150%"></h4></div></section></div></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
-<script src="assets/js/main.js" async></script>
-<script src="assets/js/encryptDemo.js" language="javascript" async></script>
+<script src="js/main.js" async></script>
+<script src="js/encryptDemo.js" language="javascript" async></script>
 <script language="javascript" async>
 document.getElementById('copyright').textContent="Copyright © " + new Date().getFullYear() + ". All rights reserved.";
 var metaList = document.getElementsByTagName("meta");
@@ -486,6 +486,12 @@ function myCallback() {
       metaList[i].content = getRandomColor();
     }
   }
+}
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').then(function() {
+    }, function() {
+    });
+  } else {
 }
 </script>
 </body>
