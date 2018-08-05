@@ -4,8 +4,8 @@ var offlineFundamentals = [
   'css/font-awesome.min.css',
   'css/main.css',
   'js/encryptDemo.js',
-  'js/encryptFull.js'
-  'js/main.js',
+  'js/encryptFull.js',
+  'js/main.js'
 ];
 self.addEventListener("install", function(event) {
   event.waitUntil(
